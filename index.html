@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sandeep Kumar - BCA 5th-semester student, web developer, Python and Java enthusiast seeking internships and entry-level IT opportunities.">
+  <meta name="author" content="Sandeep Yadav">
+  <meta name="theme-color" content="#6366f1">
+  <title>Sandeep Yadav | Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home">Sandeep<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="themeToggle" class="icon-button" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HOME ================= -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow">Open to internship & entry-level opportunities</span>
+          <h1>Hi, I'm <span>Sandeep Kumar</span></h1>
+          <h2>BCA Student | Web Developer | Python & Java Enthusiast</h2>
+          <p>
+            I am a BCA 5th-semester student passionate about software development,
+            web development, Python, Java, databases and problem solving. I enjoy
+            building practical projects and continuously improving my technical skills.
+          </p>
+
+          <div class="hero-actions">
+            <!-- REPLACE WITH YOUR RESUME PDF -->
+            <a class="btn btn-primary" href="assets/resume/Sandeep-Yadav-Resume.pdf" target="_blank" rel="noopener">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+            <a class="btn btn-outline" href="#projects">
+              <i class="fa-solid fa-code"></i> View Projects
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="social-links" aria-label="Social profiles">
+            <!-- REPLACE WITH YOUR GITHUB URL -->
+            <a href="https://github.com/shashankyadav212507-droid" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <!-- REPLACE WITH YOUR LINKEDIN URL -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <!-- REPLACE WITH YOUR EMAIL -->
+            <a href="mailto:your-email@example.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-ring">
+            <!-- REPLACE WITH YOUR PROFILE PHOTO: assets/images/profile.jpg -->
+            <img src="assets/images/profile.jpg" alt="Sandeep Yadav profile photo"
+                 onerror="this.style.display='none'; document.getElementById('profileFallback').hidden=false;">
+            <div id="profileFallback" class="profile-fallback" hidden>
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <div class="floating-card card-one"><i class="fa-solid fa-code"></i><span>Build</span></div>
+          <div class="floating-card card-two"><i class="fa-solid fa-brain"></i><span>Learn</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Get to know me</span>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-highlight reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <h3>Career Goal</h3>
+            <p>To start my IT career, gain practical industry experience and grow as a software developer.</p>
+          </div>
+
+          <div class="about-copy reveal">
+            <p>
+              I am currently pursuing a Bachelor of Computer Applications and studying in
+              the 5th semester. My interests include software development, responsive web
+              development, Python, Java, databases and practical problem solving.
+            </p>
+            <p>
+              I have worked on academic and personal projects such as an Online Examination
+              System, Student Management System, Library Management System and a Student
+              Performance Prediction project using Python and Machine Learning.
+            </p>
+            <p>
+              I am actively learning new technologies and looking for an opportunity where
+              I can contribute, learn from experienced developers and build real-world software.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section section-muted">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Technical toolkit</span>
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal"><i class="fa-brands fa-html5"></i><h3>HTML5</h3><div class="skill-meter"><span style="width:90%"></span></div><small>Strong</small></article>
+          <article class="skill-card reveal"><i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3><div class="skill-meter"><span style="width:85%"></span></div><small>Strong</small></article>
+          <article class="skill-card reveal"><i class="fa-brands fa-js"></i><h3>JavaScript</h3><div class="skill-meter"><span style="width:75%"></span></div><small>Intermediate</small></article>
+          <article class="skill-card reveal"><i class="fa-brands fa-java"></i><h3>Java</h3><div class="skill-meter"><span style="width:75%"></span></div><small>Intermediate</small></article>
+          <article class="skill-card reveal"><i class="fa-brands fa-python"></i><h3>Python</h3><div class="skill-meter"><span style="width:80%"></span></div><small>Intermediate</small></article>
+          <article class="skill-card reveal"><i class="fa-brands fa-php"></i><h3>PHP</h3><div class="skill-meter"><span style="width:70%"></span></div><small>Intermediate</small></article>
+          <article class="skill-card reveal"><i class="fa-solid fa-database"></i><h3>MySQL</h3><div class="skill-meter"><span style="width:80%"></span></div><small>Intermediate</small></article>
+          <article class="skill-card reveal"><i class="fa-brands fa-git-alt"></i><h3>Git</h3><div class="skill-meter"><span style="width:70%"></span></div><small>Working knowledge</small></article>
+          <article class="skill-card reveal"><i class="fa-brands fa-github"></i><h3>GitHub</h3><div class="skill-meter"><span style="width:70%"></span></div><small>Working knowledge</small></article>
+          <article class="skill-card reveal"><i class="fa-solid fa-brain"></i><h3>Machine Learning</h3><div class="skill-meter"><span style="width:60%"></span></div><small>Basic</small></article>
+          <article class="skill-card reveal"><i class="fa-solid fa-diagram-project"></i><h3>DSA</h3><div class="skill-meter"><span style="width:65%"></span></div><small>Learning</small></article>
+          <article class="skill-card reveal"><i class="fa-solid fa-table"></i><h3>MS Excel</h3><div class="skill-meter"><span style="width:70%"></span></div><small>Working knowledge</small></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Academic journey</span>
+          <h2>Education</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-card">
+              <span class="timeline-label">Current • 5th Semester</span>
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <!-- REPLACE COLLEGE / UNIVERSITY / DATES -->
+              <h4>[United Institute of Management Naini,Praygraj]</h4>
+              <p>Studying programming, web development, databases, computer science fundamentals and software development.</p>
+              <strong>[2024-2027]</strong>
+               <strong>CGPA:8.2/10</strong>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+            <div class="timeline-card">
+              <span class="timeline-label">Completed</span>
+              <h3>Class 12th</h3>
+              <!-- REPLACE SCHOOL / YEAR -->
+              <h4>[B.B.S. School & College Prayagraj]</h4>
+              <p>Senior Secondary Education</p>
+              <strong>[2023]</strong>
+               <strong>Percentage: 85%</strong>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-book-open"></i></div>
+            <div class="timeline-card">
+              <span class="timeline-label">Completed</span>
+              <h3>Class 10th</h3>
+              <!-- REPLACE SCHOOL / YEAR -->
+              <h4>[B.B.S. School & College Prayagraj]</h4>
+              <p>Secondary Education</p>
+              <strong>[2021]</strong>
+              <strong>Percentage: 91%</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>What I have built</span>
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top"><div class="project-icon"><i class="fa-solid fa-file-circle-check"></i></div><span>PHP + MySQL</span></div>
+            <h3>Online Examination System</h3>
+            <p>A web-based examination platform where administrators can manage exams and questions while students can attempt exams and view results.</p>
+            <div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <!-- REPLACE WITH YOUR PROJECT GITHUB URL -->
+              <a href="#" class="project-link disabled-placeholder"><i class="fa-brands fa-github"></i> GitHub</a>
+              <span class="coming-soon"><i class="fa-solid fa-clock"></i> Live Demo Coming Soon</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><div class="project-icon"><i class="fa-solid fa-users"></i></div><span>Web App</span></div>
+            <h3>Student Management System</h3>
+            <p>A database-driven application for managing student records, academic information and basic student data efficiently.</p>
+            <div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+            <div class="project-links">
+              <!-- REPLACE WITH YOUR PROJECT GITHUB URL -->
+              <a href="#" class="project-link disabled-placeholder"><i class="fa-brands fa-github"></i> GitHub</a>
+              <span class="coming-soon"><i class="fa-solid fa-clock"></i> Live Demo Coming Soon</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><div class="project-icon"><i class="fa-solid fa-book"></i></div><span>Database App</span></div>
+            <h3>Library Management System</h3>
+            <p>A system for managing books, student records, issue and return information and library data.</p>
+            <div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+            <div class="project-links">
+              <!-- REPLACE WITH YOUR PROJECT GITHUB URL -->
+              <a href="#" class="project-link disabled-placeholder"><i class="fa-brands fa-github"></i> GitHub</a>
+              <span class="coming-soon"><i class="fa-solid fa-clock"></i> Live Demo Coming Soon</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div><span>Frontend</span></div>
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive developer portfolio for showcasing skills, projects, certificates, resume and professional profiles.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <!-- REPLACE WITH YOUR PROJECT GITHUB URL -->
+              <a href="#" class="project-link disabled-placeholder"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#home" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><div class="project-icon"><i class="fa-solid fa-chart-line"></i></div><span>Machine Learning</span></div>
+            <h3>Student Performance Prediction</h3>
+            <p>A machine-learning project that analyzes student academic information and predicts performance using Python and Scikit-learn.</p>
+            <div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span></div>
+            <div class="project-links">
+              <!-- REPLACE WITH YOUR PROJECT GITHUB URL -->
+              <a href="#" class="project-link disabled-placeholder"><i class="fa-brands fa-github"></i> GitHub</a>
+              <span class="coming-soon"><i class="fa-solid fa-clock"></i> Live Demo Coming Soon</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    ```html
+<!-- ================= CERTIFICATES ================= -->
+<section id="certificates" class="section">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span>Learning proof</span>
+      <h2>Certificates</h2>
+    </div>
+
+    <div class="certificates-grid">
+
+      <!-- ================= CERTIFICATE 1 ================= -->
+      <!-- Keep your third genuine certificate here -->
+      <article class="certificate-card reveal">
+        <div class="certificate-preview">
+          <i class="fa-solid fa-certificate"></i>
+        </div>
+
+        <div class="certificate-body">
+          <span class="certificate-type">Certificate</span>
+
+          <!-- REPLACE WITH YOUR THIRD CERTIFICATE NAME -->
+          <h3>Front-End Development</h3>
+
+          <!-- REPLACE WITH ISSUING ORGANIZATION -->
+          <p>COURSE CENTRAL</p>
+
+          <!-- REPLACE WITH CERTIFICATE DATE -->
+          <small>Date: May & June 2025</small>
+
+          <!-- REPLACE WITH YOUR ACTUAL PDF FILE -->
+          <a class="btn btn-small"
+             href="certificates/certificate2.pdf"
+             target="_blank"
+             rel="noopener">
+            <i class="fa-solid fa-eye"></i> View Certificate
+          </a>
+        </div>
+      </article>
+
+      <!-- ================= CERTIFICATE 2 ================= -->
+      <!-- REPLACE certificate file, organization and date -->
+      <article class="certificate-card reveal">
+        <div class="certificate-preview">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+
+        <div class="certificate-body">
+          <span class="certificate-type">Certificate</span>
+
+          <h3>Generative AI & Prompt Engineering</h3>
+
+          <!-- REPLACE WITH ISSUING ORGANIZATION -->
+          <p>United Institute of Management Naini,Prayagraj</p>
+
+          <!-- REPLACE WITH CERTIFICATE DATE -->
+          <small>Date: 13 July 2026 to 31 July 2026</small>
+
+          <!-- REPLACE WITH YOUR ACTUAL PDF FILE -->
+          <a class="btn btn-small"
+             href="certificates/generative-ai-prompt-engineering.pdf"
+             target="_blank"
+             rel="noopener">
+            <i class="fa-solid fa-eye"></i> View Certificate
+          </a>
+        </div>
+      </article>
+
+
+      <!-- ================= CERTIFICATE 3 ================= -->
+      <!-- REPLACE certificate file, organization and date -->
+      <article class="certificate-card reveal">
+        <div class="certificate-preview">
+          <i class="fa-solid fa-chart-column"></i>
+        </div>
+
+        <div class="certificate-body">
+          <span class="certificate-type">Certificate</span>
+
+          <h3>Data Analytics</h3>
+
+          <!-- REPLACE WITH ISSUING ORGANIZATION -->
+          <p>United Institute of Management Naini,Prayagraj</p>
+
+          <!-- REPLACE WITH CERTIFICATE DATE -->
+          <small>Date: 13 July 2026 to 31 July 2026</small>
+
+          <!-- REPLACE WITH YOUR ACTUAL PDF FILE -->
+          <a class="btn btn-small"
+             href="certificates/data-analytics.pdf"
+             target="_blank"
+             rel="noopener">
+            <i class="fa-solid fa-eye"></i> View Certificate
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="section-note">
+      <i class="fa-solid fa-circle-info"></i>
+      Certificates shown here are genuine learning achievements.
+    </p>
+
+  </div>
+</section>
+```
+
+
+   
+<!-- ================= RESUME ================= -->
+<section id="resume" class="section section-muted">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span>Professional Profile</span>
+      <h2>Resume</h2>
+    </div>
+
+    <div class="resume-card reveal">
+
+      <div class="resume-icon">
+        <i class="fa-solid fa-file-pdf"></i>
+      </div>
+
+      <div class="resume-content">
+        <span class="certificate-type">PDF Resume</span>
+
+        <h3>Sandeep Yadav - Resume</h3>
+
+        <p>
+          View my resume to learn more about my education,
+          technical skills, projects, certifications and career goals.
+        </p>
+
+        <div class="hero-actions">
+
+          <!-- REPLACE WITH YOUR ACTUAL RESUME PDF -->
+          <a
+            class="btn btn-primary"
+            href="assets/resume/Sandeep-Yadav-Resume.pdf"
+            target="_blank"
+            rel="noopener">
+            <i class="fa-solid fa-eye"></i>
+            Open Resume
+          </a>
+
+          <!-- REPLACE WITH YOUR ACTUAL RESUME PDF -->
+          <a
+            class="btn btn-outline"
+            href="assets/resume/Sandeep-Yadav-Resume.pdf"
+            download>
+            <i class="fa-solid fa-download"></i>
+            Download Resume
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span>Career Journey</span>
+      <h2>Experience</h2>
+    </div>
+
+    <div class="experience-card reveal">
+
+      <div class="experience-icon">
+        <i class="fa-solid fa-briefcase"></i>
+      </div>
+
+      <div>
+
+        <span class="status">Open to Work</span>
+
+        <h3>Currently Looking for Opportunities</h3>
+
+        <p>
+          I am currently looking for internship and entry-level
+          opportunities in software development, web development,
+          Python, Java and related IT roles.
+        </p>
+
+        <div class="future-items">
+
+          <span>
+            <i class="fa-solid fa-check"></i>
+            Internship
+          </span>
+
+          <span>
+            <i class="fa-solid fa-check"></i>
+            Training
+          </span>
+
+          <span>
+            <i class="fa-solid fa-check"></i>
+            Workshop
+          </span>
+
+          <span>
+            <i class="fa-solid fa-check"></i>
+            Freelance Work
+          </span>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+ <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-muted">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Let's connect</span>
+          <h2>Contact Me</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Let's talk about opportunities</h3>
+            <p>If you are a recruiter, developer or collaborator, feel free to reach out.</p>
+
+            <!-- REPLACE CONTACT DETAILS -->
+            <a class="contact-item" href="mailto:shashankyadav212507@gmail.com">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <div><strong>Email</strong><small>shashankyadav212507@gmail.com</small></div>
+            </a>
+            <div class="contact-item">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <div><strong>Phone</strong><small>+91 7992192802</small></div>
+            </div>
+            <div class="contact-item">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <div><strong>Location</strong><small>[George Town,Prayagraj]</small></div>
+            </div>
+            <a class="contact-item" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+              <span><i class="fa-brands fa-linkedin"></i></span>
+              <div><strong>LinkedIn</strong><small>[www.linkedin.com/in/sandeep-kumar-9652a2287]</small></div>
+            </a>
+            <a class="contact-item" href="https://github.com/" target="_blank" rel="noopener">
+              <span><i class="fa-brands fa-github"></i></span>
+              <div><strong>GitHub</strong><small>[https://github.com/shashankyadav212507-droid]</small></div>
+            </a>
+          </div>
+
+          <div class="contact-form-wrap reveal">
+            <form id="contactForm">
+              <!-- STATIC SITE: this form opens the visitor's email client. -->
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required>
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="your@email.com" required>
+
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Internship / Collaboration" required>
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+              <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+              <p class="form-note">This static form uses your email app; no backend or database is used.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    ```html
+```
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand footer-brand" href="#home">Sandeep<span>.</span></a>
+        <p>BCA Student | Web Developer | Python & Java Enthusiast</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:your-email@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="container copyright">© 2026 Sandeep Yadav. All Rights Reserved.</div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
